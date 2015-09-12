@@ -1,6 +1,10 @@
 package ru.javawebinar.topjava.model;
 
 import java.time.LocalDateTime;
+import java.time.LocalTime;
+
+import ru.javawebinar.topjava.util.TimeUtil;
+
 
 /**
  * GKislin
@@ -29,5 +33,9 @@ public class UserMeal {
 
     public int getCalories() {
         return calories;
+    }
+
+    public boolean isBetween(LocalTime startTime, LocalTime endTime){
+        return TimeUtil.isBetween(LocalTime.from(this.dateTime), startTime, endTime);
     }
 }
