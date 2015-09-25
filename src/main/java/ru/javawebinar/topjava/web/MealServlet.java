@@ -13,6 +13,6 @@ public class MealServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.getRequestDispatcher("/MealList.jsp").forward(request, response);
+        request.getRequestDispatcher("/mealList.jsp").forward(request, response);
     }
 }
