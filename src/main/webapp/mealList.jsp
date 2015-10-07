@@ -20,7 +20,7 @@
             <p style="color:red">${meal}</p>
         </c:if>
         <c:if test="${!meal.exceed}">
-            <p style="color:#2aff4d">${meal}</p>
+            <p>${meal}</p>
         </c:if>
     </c:forEach>
 </body>
