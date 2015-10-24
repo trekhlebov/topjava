@@ -56,6 +56,7 @@ public class UserMealsUtil {
         for (UserMeal meal: mealList){
             LocalDate mealDate = meal.getDateTime().toLocalDate();
             coloriesSumByDate.put(mealDate, coloriesSumByDate.getOrDefault(mealDate, 0) + meal.getCalories());
+            coloriesSumByDate.merge(mealDate, meal.getCalories(), Integer::sum);
         }
 
         List<UserMealWithExceed> mealExceededLst = new ArrayList<>();
