@@ -11,7 +11,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
-    <title>Meal list</title>
     <style>
         .normal {color: green;}
         .exceeded {color: red;}
@@ -20,8 +19,7 @@
 </head>
 <body>
 <section>
-    <h2><a href="index.html">Home</a></h2>    <h2>Meal list</h2>
-    <h3>Meal list</h3>
+    <h2><a href="index.html">Home</a></h2>
 
     <table border="1" cellpadding="8" cellspacing="0">
         <thead>
